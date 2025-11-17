@@ -1,9 +1,9 @@
 extends Sprite2D
 
 
-var max_speed := 1200.0
+var max_speed := 2500.0
 var velocity := Vector2(0, 0)
-var steering_factor := 3.0
+var steering_factor := 3
 
 
 func _process(delta: float) -> void:

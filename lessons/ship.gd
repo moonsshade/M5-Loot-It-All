@@ -1,7 +1,7 @@
-extends Sprite2D
+extends Area2D
 
 
-var max_speed := 2500.0
+var max_speed := 500.0
 var velocity := Vector2(0, 0)
 var steering_factor := 3
 

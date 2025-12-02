@@ -9,7 +9,7 @@
 radius = 43.011627
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5xifn"]
-bg_color = Color(18.892157, 0, 0, 1)
+bg_color = Color(1, 0, 0, 1)
 
 [node name="Ship" type="Area2D"]
 script = ExtResource("4_p1sls")
@@ -20,7 +20,7 @@ texture = ExtResource("3_pdppw")
 [node name="MainThruster" parent="Sprite2D" instance=ExtResource("5_q7c3l")]
 position = Vector2(-35.000004, -0.09156799)
 scale = Vector2(1, 1.0424095)
-points = PackedVector2Array(-8.000002, 0.8714926, 15.999996, -0.08788154, 33.333332, 0, 67, -0.08800557)
+points = PackedVector2Array(0, 0, 33.333332, 0, 66.666664, 0)
 
 [node name="SideThruster" parent="Sprite2D" instance=ExtResource("6_1updt")]
 position = Vector2(-38.000004, -20.000002)
@@ -42,10 +42,11 @@ anchors_preset = 0
 offset_right = 1.0
 offset_bottom = 1.0
 
-[node name="ProgressBar" type="ProgressBar" parent="UI"]
+[node name="HealthBar" type="ProgressBar" parent="UI"]
 layout_mode = 0
 offset_left = -46.0
 offset_top = -77.0
 offset_right = 46.0
 offset_bottom = -50.0
-theme_override_styles/background = SubResource("StyleBoxFlat_5xifn")
+theme_override_styles/fill = SubResource("StyleBoxFlat_5xifn")
+show_percentage = false

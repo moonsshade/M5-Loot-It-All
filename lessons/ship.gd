@@ -1,9 +1,9 @@
 extends Area2D
 
 var health:=10
-var max_speed := 500.0
+var max_speed := 1000.0
 var velocity := Vector2(0, 0)
-var steering_factor := 3
+var steering_factor := 6
 var gem_count := 0
 
 func _process(delta: float) -> void:
@@ -31,7 +31,7 @@ func _ready() -> void:
 	set_health(50)
 	
 func _on_area_entered(area_that_entered: Area2D) -> void:
-	if area_that_entered.is_in_group("Gem"):
+	if area_that_entered.is_in_group("gem"):
 		set_gem_count(gem_count + 1)
 	elif area_that_entered.is_in_group("healing_item"):
 		set_health(health + 10)

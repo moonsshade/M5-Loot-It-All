@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://24ln0ahcx7f8" path="res://lessons/item.gd" id="1_ht84s"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ht84s"]
-radius = 25.5
+radius = 25.317978
 
 [node name="HealthPack" type="Area2D" groups=["healing_item"]]
 script = ExtResource("1_ht84s")

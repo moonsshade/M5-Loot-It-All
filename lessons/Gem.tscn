@@ -6,10 +6,10 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_ht84s"]
 radius = 31.06445
 
-[node name="Gem" type="Area2D"]
+[node name="Gem" type="Area2D" groups=["gem"]]
 script = ExtResource("1_7inmr")
 
-[node name="Sprite2D" type="Sprite2D" parent="." groups=["gem"]]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_7inmr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

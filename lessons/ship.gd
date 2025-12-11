@@ -1,7 +1,7 @@
 extends Area2D
 
 var health:=10
-var max_speed := 1000.0
+var max_speed := 1500.0
 var velocity := Vector2(0, 0)
 var steering_factor := 6
 var gem_count := 0
@@ -10,6 +10,9 @@ func _process(delta: float) -> void:
 	var direction := Vector2(0, 0)
 	direction.x = Input.get_axis("move_left", "move_right")
 	direction.y = Input.get_axis("move_up", "move_down")
+	var viewport_size := get_viewport_rect().size
+	position.x = wrapf(position.x, 0, viewport_size.x)
+	position.y = wrapf(position.y, 0, viewport_size.y)
 
 	if direction.length() > 1.0:
 		direction = direction.normalized()

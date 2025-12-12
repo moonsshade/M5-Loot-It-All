@@ -1,17 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8rwloj58ejjd"]
+[gd_scene load_steps=5 format=3 uid="uid://4clsvdvuyocx"]
 
-[ext_resource type="Script" uid="uid://24ln0ahcx7f8" path="res://lessons/item.gd" id="1_7inmr"]
-[ext_resource type="Texture2D" uid="uid://d0bh8am2qd005" path="res://assets/gem_icon.png" id="2_7inmr"]
+[ext_resource type="Script" uid="uid://24ln0ahcx7f8" path="res://lessons/item.gd" id="1_ulrl0"]
+[ext_resource type="Texture2D" uid="uid://d0bh8am2qd005" path="res://assets/gem_icon.png" id="2_ulrl0"]
+[ext_resource type="AudioStream" uid="uid://du8widby72vvv" path="res://assets/audio/gempickup.ogg" id="3_ty4yi"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ht84s"]
-radius = 31.06445
+[sub_resource type="CircleShape2D" id="CircleShape2D_37o3p"]
+radius = 30.0
 
 [node name="Gem" type="Area2D" groups=["gem"]]
 collision_layer = 2
-script = ExtResource("1_7inmr")
+script = ExtResource("1_ulrl0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_7inmr")
+texture = ExtResource("2_ulrl0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_ht84s")
+shape = SubResource("CircleShape2D_37o3p")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ty4yi")
+volume_db = -0.05

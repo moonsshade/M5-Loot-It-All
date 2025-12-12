@@ -1,25 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://btkjymc78ap8d"]
+[gd_scene load_steps=7 format=3 uid="uid://btkjymc78ap8d"]
 
 [ext_resource type="PackedScene" uid="uid://dmv50krf4bo5r" path="res://lessons/ship.tscn" id="2_2j1u5"]
 [ext_resource type="PackedScene" uid="uid://bxfevggvxo634" path="res://assets/background/space_background.tscn" id="3_e6xy1"]
 [ext_resource type="PackedScene" uid="uid://b1yl6aosq3kty" path="res://lessons/random_item_placer.tscn" id="3_etm7e"]
-[ext_resource type="PackedScene" uid="uid://c8rwloj58ejjd" path="res://lessons/gem.tscn" id="4_4rc43"]
+[ext_resource type="PackedScene" uid="uid://4clsvdvuyocx" path="res://lessons/gem.tscn" id="4_4rc43"]
 [ext_resource type="PackedScene" uid="uid://o1ca06m0k4bk" path="res://lessons/health_pack.tscn" id="5_dru4e"]
+[ext_resource type="AudioStream" uid="uid://bgrdf16ueg842" path="res://assets/audio/background.ogg" id="6_kd2gs"]
 
 [node name="Level" type="Node2D"]
-metadata/_edit_vertical_guides_ = [1348.0]
 
 [node name="Ship" parent="." instance=ExtResource("2_2j1u5")]
-position = Vector2(827, 638)
+position = Vector2(946, 546)
 
 [node name="SpaceBackground" parent="." instance=ExtResource("3_e6xy1")]
-
-[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
 
 [node name="RandomItemPlacer" parent="." instance=ExtResource("3_etm7e")]
 
 [node name="Gem" parent="." instance=ExtResource("4_4rc43")]
-position = Vector2(315, 821)
+position = Vector2(749, 671)
 
 [node name="HealthPack" parent="." instance=ExtResource("5_dru4e")]
-position = Vector2(341, 821)
+position = Vector2(764, 698)
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_kd2gs")
+autoplay = true

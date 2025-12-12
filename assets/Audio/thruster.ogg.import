@@ -2,13 +2,13 @@
 
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
-uid="uid://bexg2y85fmtd4"
-path="res://.godot/imported/thruster.ogg-e7201b8a934cf99139498fc2fb44725c.oggvorbisstr"
+uid="uid://d2s7fqs8b62e7"
+path="res://.godot/imported/thruster.ogg-96bbb282788233870348b9b9477b124f.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/Audio/thruster.ogg"
-dest_files=["res://.godot/imported/thruster.ogg-e7201b8a934cf99139498fc2fb44725c.oggvorbisstr"]
+source_file="res://assets/audio/thruster.ogg"
+dest_files=["res://.godot/imported/thruster.ogg-96bbb282788233870348b9b9477b124f.oggvorbisstr"]
 
 [params]
 

@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/thruster.ogg-96bbb282788233870348b9b9477b124f
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
+loop=true
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4
